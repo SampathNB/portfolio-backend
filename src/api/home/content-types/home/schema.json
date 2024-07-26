@@ -1,0 +1,68 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "page_title": {
+      "type": "string"
+    },
+    "skills_expertise": {
+      "type": "json"
+    },
+    "hero_content": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "about_label": {
+      "type": "string"
+    },
+    "about_title": {
+      "type": "string"
+    },
+    "about_content": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "years_of_exp_num": {
+      "type": "string"
+    },
+    "years_of_exp_text": {
+      "type": "string"
+    },
+    "projects_completed_num": {
+      "type": "string"
+    },
+    "projects_completed_text": {
+      "type": "string"
+    },
+    "opportunities_title": {
+      "type": "string"
+    },
+    "opportunities_content": {
+      "type": "text"
+    },
+    "collaboration_title": {
+      "type": "string"
+    },
+    "collaboration_content": {
+      "type": "text"
+    }
+  }
+}
