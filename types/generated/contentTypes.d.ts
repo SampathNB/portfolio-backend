@@ -417,33 +417,17 @@ export interface ApiProjectProject extends Schema.CollectionType {
   info: {
     singularName: 'project';
     pluralName: 'projects';
-    displayName: 'project';
+    displayName: 'Project';
     description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    title: Attribute.String;
-    date: Attribute.Date;
-    image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-    frameworks_library: Attribute.JSON;
-    overview: Attribute.RichText &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'standard';
-        }
-      >;
-    what_i_did: Attribute.RichText &
-      Attribute.CustomField<
-        'plugin::ckeditor.CKEditor',
-        {
-          output: 'HTML';
-          preset: 'standard';
-        }
-      >;
+    Title: Attribute.String;
+    Image: Attribute.Media<'images'> & Attribute.Required;
+    Developed_Date: Attribute.Date;
+    Img_URL: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

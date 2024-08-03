@@ -4,7 +4,7 @@
   "info": {
     "singularName": "project",
     "pluralName": "projects",
-    "displayName": "project",
+    "displayName": "Project",
     "description": ""
   },
   "options": {
@@ -12,41 +12,22 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "Title": {
       "type": "string"
     },
-    "date": {
-      "type": "date"
-    },
-    "image": {
+    "Image": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ]
     },
-    "frameworks_library": {
-      "type": "json"
+    "Developed_Date": {
+      "type": "date"
     },
-    "overview": {
-      "type": "customField",
-      "options": {
-        "output": "HTML",
-        "preset": "standard"
-      },
-      "customField": "plugin::ckeditor.CKEditor"
-    },
-    "what_i_did": {
-      "type": "customField",
-      "options": {
-        "output": "HTML",
-        "preset": "standard"
-      },
-      "customField": "plugin::ckeditor.CKEditor"
+    "Img_URL": {
+      "type": "string"
     }
   }
 }
